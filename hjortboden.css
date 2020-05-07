@@ -1,0 +1,11 @@
+body{
+    background-color: #f09b2c;
+}
+
+main{
+    background-color: lightgray;
+    max-width: 62.5em;
+    padding: 2em 3em 2em 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
