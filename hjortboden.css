@@ -13,3 +13,15 @@ main{
     margin-right: auto;
 }
 
+nav a img{
+    border: 5px outset #005500;
+    background-color: #777;
+}
+
+nav a img:hover{
+    border: 5px inset #005500;
+}
+
+nav a img:active{
+    opacity: 50%;
+}
