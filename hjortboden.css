@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #f09b2c;
 }
@@ -8,3 +12,4 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
