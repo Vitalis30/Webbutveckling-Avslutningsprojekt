@@ -1,27 +1,27 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f09b2c;
 }
 
-main{
+main {
     background-color: #999;
     max-width: 62.5em;
     margin-left: auto;
     margin-right: auto;
 }
 
-nav a img{
+nav a img {
     border: 5px outset #005500;
     background-color: #777;
 }
 
-nav a img:hover{
+nav a img:hover {
     border: 5px inset #005500;
 }
 
-nav a img:active{
+nav a img:active {
     opacity: 50%;
 }
