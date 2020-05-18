@@ -9,12 +9,10 @@ body {
 
 main {
     background-color: #c0c0c0;
-    max-width: 1000px;
     display: table;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 18em;
-    box-shadow: 0px 2px 2px rgb(19, 19, 19);
 }
 
 a {
@@ -51,13 +49,12 @@ nav.menu {
 
 nav.menu a {
     height: 8em;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
     font-size: 2em;
-    width: 95%;
+    width: auto;
     min-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.25em;
 }
 
 nav.menu a span {
@@ -69,6 +66,7 @@ nav.menu a span {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s;
 }
 
 nav.menu a span:hover {
@@ -100,26 +98,44 @@ nav.menu a span:hover {
 }
 
 
-/* på smalare skärmar så som paddor och mobiler */
+/* på dator */
 
 @media only screen and (min-width: 720px) {
+    main {
+        max-width: 1000px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 2px 2px rgb(19, 19, 19);
+    }
     nav.menu {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     nav.menu a {
-        margin-top: 0.5em;
+        height: 8em;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 2em;
+        width: 95%;
+        min-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .knapp1 {
         grid-column: 1;
+        grid-row: 1;
     }
     .knapp2 {
         grid-column: 2;
+        grid-row: 1;
     }
     .knapp3 {
         grid-column: 3;
+        grid-row: 1;
     }
     .knapp4 {
         grid-column: 4;
+        grid-row: 1;
     }
 }
