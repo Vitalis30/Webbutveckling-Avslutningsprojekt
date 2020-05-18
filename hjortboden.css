@@ -3,55 +3,79 @@
 }
 
 body {
-    background-color: #f09b2c;
+    margin-top: 0;
+    background-color: #c0c2c0;
 }
 
 main {
-    max-width: 100%;
+    background-color: #999;
+    max-width: 1000px;
+    min-width: 350px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 2px rgb(19, 19, 19);
 }
 
-@media only screen and (min-width:62.6em) {
-    main {
-        background-color: #999;
-        max-width: 62.5em;
-        min-width: 10em;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header {
-        max-width: 62.5em;
-        min-width: 30em;
-    }
-    nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 0.5em;
-        text-align: center;
-    }
-    nav a img {
-        border: 5px outset #005500;
-        background-color: #777;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    nav a img:hover {
-        border: 5px inset #005500;
-    }
-    nav a img:active {
-        opacity: 0.5;
-    }
-    .knapp1 {
-        grid-column: 1;
-    }
-    .knapp2 {
-        grid-column: 2;
-    }
-    .knapp3 {
-        grid-column: 3;
-    }
-    .kanpp4 {
-        grid-column: 4;
-    }
+nav.top,
+nav.top a {
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    font-size: 1em;
+    padding: 0.5em;
+    padding-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav.top img {
+    background-color: whitesmoke;
+    height: 1em;
+}
+
+header img {
+    width: 100%;
+}
+
+nav.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav.menu a {
+    color: whitesmoke;
+    height: 8em;
+    background-repeat: repeat;
+    font-size: 2em;
+    width: 95%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.knapp1 {
+    background-image: url("Bilder/Om_hjortboden_knapp.png");
+    grid-column: 1;
+}
+
+.knapp2 {
+    background-image: url("Bilder/tid_vi_pangar.png");
+    grid-column: 2;
+}
+
+.knapp3 {
+    background-image: url("Bilder/Om_hjortar.png");
+    grid-column: 3;
+}
+
+.knapp4 {
+    background-image: url("Bilder/hjortar_vi_minns.png");
+    grid-column: 4;
 }
